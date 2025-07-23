@@ -274,12 +274,11 @@
 
 
     </section>
+<section class="card" id="about">
+  <h2>About Me</h2>
+  <p>I am a motivated graduate passionate about technology, software development, and data-driven solutions.</p>
+</section>
 
-    <section class="card" id="about">
-      <h2>About Me</h2>
-   <p>I am a graduate with a Bachelor of Science in Information Systems Management, passionate about building smart technologies through full-stack development, data analytics, machine intelligence, and network architecture.</p>
-
-    </section>
 
 <section class="card" id="what-i-do">
   <h2>What I Do</h2>
@@ -416,14 +415,16 @@
 
 
     <section class="card" id="experience">
-      <h2>Experience</h2>
-      <p><strong>Web Development Intern</strong> – Amecore Technologies (Jul - Oct 2024)</p>
-      <ul>
-        <li>Improved Amecore website interfaces</li>
-        <li>Used Agile methods like daily standups and sprint planning</li>
-        <li>Built and maintained Django/JavaScript features</li>
-      </ul>
-    </section>
+  <h2>Experience</h2>
+  <p><strong>Amecore Intern</strong> – Amecore Technologies (Jul - Oct 2024)</p>
+  <ul>
+    <li>Improved Amecore website interfaces</li>
+    <li>Used Scrum agile methodology, including daily standups and sprint planning</li>
+    <li>Built and maintained Laravel/JavaScript features</li>
+    <li>Ensured the website is fully responsive across different screen sizes</li>
+    <li>Implemented API integration and testing to enhance application functionality</li>
+  </ul>
+</section>
 
    <section class="card" id="education">
   <h2>Education</h2>
@@ -554,42 +555,100 @@
     </div>
   </div>
 </section>
+<section class="card" id="projects" style="padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <style>
+    /* Make project icons smaller */
+    .project-container > img {
+      width: 32px;    /* reduced from 64 */
+      height: 32px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
 
-<section class="card" id="projects">
-  <h2>Projects</h2>
-<div class="projects-container">
+    /* GitHub and live icons styling */
+    .project-details a img {
+      width: 22px;    /* very small */
+      height: 22px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
 
-  <!-- Linked Smart Timetable Generator project only -->
-  <a href="https://aru-smart-automated-updated-2.onrender.com/" target="_blank" style="text-decoration: none; color: inherit;">
-    <div class="project-container">
+    /* Link styling */
+    .project-details a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    /* Spacing for multiple links */
+    .project-details a:not(:last-child) {
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+  </style>
+
+  <h2 style="font-size: 28px; margin-bottom: 20px;">Projects</h2>
+
+  <div class="projects-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+    <div class="project-container" style="flex: 1 1 300px; background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
       <img src="https://img.icons8.com/color/64/000000/timetable.png" alt="Smart Timetable Generator Icon" />
       <div class="project-details">
-        <h3>Smart Timetable Generator</h3>
-        <p>Conflict-free scheduling using Genetic Algorithms to automate university timetables efficiently.</p>
+        <h3 style="margin: 10px 0 6px;">Smart Timetable Generator</h3>
+        <p style="margin-bottom: 10px;">Conflict-free scheduling using Genetic Algorithms to automate university timetables efficiently.</p>
+        <a href="https://github.com/Geraldgarus/aru-smart-automated-updated" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/20/000000/github.png" alt="GitHub Icon" />
+          View Project on GitHub
+        </a>
+        <br />
+        <a href="https://aru-smart-automated-updated-2.onrender.com/" target="_blank">
+          <img src="https://img.icons8.com/fluency/20/external-link.png" alt="Live Link Icon" />
+          View Live Project
+        </a>
       </div>
     </div>
-  </a>
 
-  <!-- Other projects remain unchanged -->
-  <div class="project-container">
-    <img src="https://img.icons8.com/color/64/000000/hospital.png" alt="Hospital Booking System Icon" />
-    <div class="project-details">
-      <h3>Hospital Booking System</h3>
-      <p>Django-powered medical appointments platform for easy booking and management.</p>
+    <div class="project-container" style="flex: 1 1 300px; background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <img src="https://img.icons8.com/color/64/000000/hospital.png" alt="Hospital Booking System Icon" />
+      <div class="project-details">
+        <h3 style="margin: 10px 0 6px;">Hospital Booking System</h3>
+        <p style="margin-bottom: 10px;">Django-powered medical appointments platform for easy booking and management.</p>
+        <a href="https://github.com/Geraldgarus/-Django-Online-Booking-Hospital-Appointments" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/20/000000/github.png" alt="GitHub Icon" />
+          View Project on GitHub
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="project-container">
-    <img src="https://img.icons8.com/color/64/000000/book-shelf.png" alt="Bookstore Project Management Icon" />
-    <div class="project-details">
-      <h3>Bookstore Project Management</h3>
-      <p>Comprehensive system to manage bookstore inventory, orders, and customer interactions efficiently.</p>
+    <div class="project-container" style="flex: 1 1 300px; background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <img src="https://img.icons8.com/color/64/000000/book-shelf.png" alt="Bookstore Project Management Icon" />
+      <div class="project-details">
+        <h3 style="margin: 10px 0 6px;">Bookstore Project Management</h3>
+        <p style="margin-bottom: 10px;">Comprehensive system to manage bookstore inventory, orders, and customer interactions efficiently.</p>
+        <a href="https://github.com/Geraldgarus/Distributed-bookstore_project" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/20/000000/github.png" alt="GitHub Icon" />
+          View Project on GitHub
+        </a>
+      </div>
     </div>
+
+    <div class="project-container" style="flex: 1 1 300px; background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+      <img src="https://img.icons8.com/color/64/000000/report-card.png" alt="Business Report Project Icon" />
+      <div class="project-details">
+        <h3 style="margin: 10px 0 6px;">Business Report Project</h3>
+        <p style="margin-bottom: 10px;">Detailed business analysis report covering performance, market trends, and strategic recommendations.</p>
+        <a href="https://github.com/Geraldgarus/Bussiness_Report_Project" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/20/000000/github.png" alt="GitHub Icon" />
+          View Project on GitHub
+        </a>
+      </div>
+    </div>
+
   </div>
+</section>
 
-</div>
 
-    
     
 
     
